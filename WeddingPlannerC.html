@@ -1,0 +1,209 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="Files_Images/logo.jpg" />
+		<style>
+			body
+			{
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.static, .mel
+			{
+				width:70%;
+			}
+			#a1
+			{
+				height:115px;
+				background-color:white;
+				
+			}
+			#a2
+			{
+				height:50px;
+				background-color:#c0c0c0;
+			}
+			#a3
+			{
+				height:1000px;
+				background-color:white;
+				
+			}
+			#t1
+			{
+				padding: 5px;
+			}
+			#t1:hover{background-color:#ffe6e6}
+			#primary_nav_wrap
+			{
+				margin-top:0;
+			}
+
+			#primary_nav_wrap ul
+			{
+				list-style:none;
+				position:relative;
+				float:left;
+				margin:0;
+				padding:5px;
+			}
+
+			#primary_nav_wrap ul a
+			{
+				color:#333;
+				text-decoration:none;
+				padding:0 45px;	
+			}
+
+			#primary_nav_wrap ul li
+			{
+				position:relative;
+				float:left;
+				margin:0;
+				padding:0px;
+				
+			}
+			#primary_nav_wrap ul li:hover
+			{
+				background:#ffe6e6;
+			}
+			#primary_nav_wrap ul ul
+			{
+				display:none;
+				position:absolute;
+				top:110%;
+				left:0;
+				background:#fff;
+				padding:0;
+			}
+
+			#primary_nav_wrap ul ul li
+			{
+				float:none;
+				width:200px
+			}
+
+			#primary_nav_wrap ul ul a
+			{
+				line-height:300%;
+				padding:10px 15px;
+			}
+			#primary_nav_wrap ul ul ul
+			{
+				top:0;
+				left:100%
+			}
+			#primary_nav_wrap ul li:hover > ul
+			{
+				display:block
+			}
+		</style>
+		<script>
+			function home()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/home.html" ></object>';
+			}
+			function log_out()
+			{
+				//document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/log_out.php" ></object>';
+				location.replace("WeddingPlanner.html");
+			}
+			
+			function Gold_C_Pack()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/gold_c_pack.php" ></object>';
+			}
+			function Silver_C_Pack()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/silver_c_pack.php" ></object>';
+			}
+			function Platinum_C_Pack()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/platinum_c_pack.php" ></object>';
+			}
+			function NoPack_C_Pack()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/cust_pack.php" ></object>';
+			}
+			
+			function View_Band()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/view_band.php" ></object>';
+			}
+			function View_Caterer()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/view_caterer.php" ></object>';
+			}
+			function View_DJ()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/view_dj.php" ></object>';
+			}
+			function View_MC()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/view_mc.php" ></object>';
+			}
+			function View_Decorator()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/view_decorator.php" ></object>';
+			}
+			function View_Hall()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/view_hall.php" ></object>';
+			}
+			function View_Cake()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/view_cake.php" ></object>';
+			}
+			function View_Car()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/view_car.php" ></object>';
+			}
+			
+			function View_Cart()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/view_cart.php" ></object>';
+			}
+		</script>
+	</head>
+	<body background="Files_Images/background.jpg">
+		<center>
+		<div class="static" id="a1">
+			<img src="Files_Images/wp.jpg">
+		</div>
+		<div class="mel" id="a2">
+			<nav id="primary_nav_wrap">
+			<table style="width:100%" cellspacing="5">
+				<tr>
+					<th id="t1"><ul><li><a href="#" onclick="home()">HOME</a></ul></li></th>
+					<th id="t1">
+						<ul><li><a href="#">PACKAGES</a>
+							<ul><li><a href="#" onclick="Gold_C_Pack()">Gold Package</a></li>
+								<li><a href="#" onclick="Silver_C_Pack()">Silver Package</a></li>
+								<li><a href="#" onclick="Platinum_C_Pack()">Platinum Package</a></li>
+								<li><a href="#" onclick="NoPack_C_Pack()">No Package</a></li>
+								<li><a href="#">View Vendors</a>
+								<ul><li><a href="#" onclick="View_Hall()">Hall</a></li>
+									<li><a href="#" onclick="View_DJ()">DJ</a></li>
+									<li><a href="#" onclick="View_MC()">MC</a></li>
+									<li><a href="#" onclick="View_Decorator()">Decorator</a></li>
+									<li><a href="#" onclick="View_Cake()">Cake</a></li>
+									<li><a href="#" onclick="View_Car()">Car</a></li>
+									<li><a href="#" onclick="View_Band()">Band</a></li>
+									<li><a href="#" onclick="View_Caterer()">Catarer</a></li>
+								</ul>
+							</ul>
+						</ul>
+					</th> 
+					<th id="t1"><ul><li><a href="#" onclick="View_Cart()">CART</a></ul></li></th>
+					<th id="t1"><ul><li><a href="#" onclick="log_out()">LOG OUT</a></ul></li></th>
+				</tr>
+			</table>
+			</nav>
+		</div>
+		<div class="static" id="a3">
+			<center><b> <font size="15"> WELCOME </font></b></center><br>
+			<img  width="930px" height="926px" src="Files_Images/Picture2.jpg">
+		</div>
+		</center>
+	</body>
+</html>

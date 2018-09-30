@@ -1,0 +1,168 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="Files_Images/logo.jpg" />
+		<style>
+			body
+			{
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.static, .mel
+			{
+				width:70%;
+			}
+			#a1
+			{
+				height:115px;
+				background-color:white;
+				
+			}
+			#a2
+			{
+				height:50px;
+				background-color:#c0c0c0;
+			}
+			#a3
+			{
+				height:1000px;
+				background-color:white;
+				
+			}
+			#t1
+			{
+				padding: 5px;
+			}
+			#t1:hover{background-color:#ffe6e6}
+			#primary_nav_wrap
+			{
+				margin-top:0;
+			}
+
+			#primary_nav_wrap ul
+			{
+				list-style:none;
+				position:relative;
+				float:left;
+				margin:0;
+				padding:5px;
+			}
+
+			#primary_nav_wrap ul a
+			{
+				color:#333;
+				text-decoration:none;
+				padding:0 45px;	
+			}
+
+			#primary_nav_wrap ul li
+			{
+				position:relative;
+				float:left;
+				margin:0;
+				padding:0px;
+				
+			}
+			#primary_nav_wrap ul li:hover
+			{
+				background:#ffe6e6;
+			}
+			#primary_nav_wrap ul ul
+			{
+				display:none;
+				position:absolute;
+				top:110%;
+				left:0;
+				background:#fff;
+				padding:0;
+			}
+
+			#primary_nav_wrap ul ul li
+			{
+				float:none;
+				width:200px
+			}
+
+			#primary_nav_wrap ul ul a
+			{
+				line-height:300%;
+				padding:10px 15px;
+			}
+			#primary_nav_wrap ul ul ul
+			{
+				top:0;
+				left:100%
+			}
+			#primary_nav_wrap ul li:hover > ul
+			{
+				display:block
+			}
+		</style>
+		<script>
+			function home()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/home.html" ></object>';
+			}
+			function log_out()
+			{
+				//document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/log_out.php" ></object>';
+				location.replace("WeddingPlanner.html");
+			}
+			function ViewPlanners()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/ViewPlanners.php" ></object>';
+			}
+			function ViewCustomers()
+			{
+				document.getElementById("a3").innerHTML='<object height="1000px" width=70% type="text/html" data="Files_Images/ViewCustomers.php" ></object>';
+			}
+			</script>
+</head>
+
+<body background="Files_Images/background.jpg">
+		<center>
+		<div class="static" id="a1">
+			<img src="Files_Images/wp.jpg">
+		</div>
+		<div class="mel" id="a2">
+			<nav id="primary_nav_wrap">
+			<table style="width:100%" cellspacing="5">
+				<tr>
+					<th id="t1"><ul><li><a href="#" onclick="home()">HOME</a></ul></li></th>
+					<th id="t1">
+						<ul><li><a href="#">DASHBOARD</a>						
+							<ul><li><a href="#" onclick="ViewPlanners()">Handle Planners</a></li>
+								<li><a href="#" onclick="ViewCustomers()">Handle Customers</a></li>
+							</ul>
+						</ul>
+					</th> 
+					<th id="t1"><ul><li><a href="#" onclick="log_out()">LOG OUT</a></ul></li></th>
+				</tr>
+			</table>
+			</nav>
+		</div>
+		<div class="static" id="a3">
+			<br>
+
+			<div class="mySlides fade">
+				<img src="Files_Images/car.jpg" style="width:100%">
+			</div>
+			
+			 <div class="mySlides fade">
+				<img src="Files_Images/cars.jpg" style="width:100%">
+			</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+
+			</div>
+			 <script src="js/SlidingPics.js"></script>
+	</div>
+			
+	</center>
+</body>
+</html>

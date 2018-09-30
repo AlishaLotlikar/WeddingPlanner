@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert Planner</title>
+    </head>
+    <body>
+        <form action="InsertPlanner.php" method = "POST">
+			<center>
+			<h1>INSERT PLANNER</h1>
+			<br><br><b>First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+			<input name="FirstName" size="30" style="height: 19px;"  type="text" required>
+			
+			<br><br><b>Last Name</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+			<input name="LastName" size="30" style="height: 19px;"  type="text" required>
+			
+			<br><br><b>Contact Number&nbsp;&nbsp;:</b>
+			<input name="number" type="text" pattern="[789][0-9]{9}" required id="number" placeholder="Mobile Number" style="height: 19px;" size="30"><br>
+			
+			<br><b>Email Address</b> &nbsp;&nbsp;&nbsp;&nbsp;:
+			<input type="email" id="myEmail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" style="height: 19px;" size="30">
+			<br><br>
+			
+			<label><b>Password</b></label>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+			<input type="password"  size="30" placeholder="Enter Password" name="psw" required><br><br>
+			
+			<label><b>Repeat Password</b></label>
+			:
+			<input type="password"  size="30" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+
+			<button type ="submit" name="submit" value="INSERT DATA"> INSERT DATA </button>
+			</center>
+		</form>
+    </body>
+</html>   

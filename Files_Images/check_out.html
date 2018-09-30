@@ -1,0 +1,43 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+	<div class="static" id="a3">
+		<br><br><br><br><br>
+        <form action="#" method = "GET">
+			<center>
+			
+			<br><br>DEBIT CARD &nbsp;&nbsp;&nbsp;:
+			<input name="button" value="^button1^" type="radio" value="DebitCard" data-href="debitcard.html" checked>
+			<br><br>CREDIT CARD &nbsp;&nbsp;:
+			<input name="button" value="^button2^" type="radio" value="Creditcard" data-href="creditcard.html">
+			<br><br>CASH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+			<input name="button" value="^button3^" type="radio" value="Cash" data-href="cash.html"><br><br><br>
+			<input type="submit" value="PROCEED" id="btnFormSubmit">
+
+			</center>
+		</form>
+	<script>
+	var submit = document.getElementById('btnFormSubmit');
+	submit.addEventListener('click', submitForm);
+
+	function submitForm(event){
+	event.preventDefault();
+	event.stopPropagation();
+
+	var href = '',
+	inputs = this.parentNode.getElementsByTagName('input')
+		for(var i=0;i<inputs.length;i++){
+			 if(inputs[i].getAttribute('name') == 'button' && inputs[i].checked){
+				 href = inputs[i].getAttribute('data-href');
+				 window.location = href;
+			 }
+		}
+	}
+	</script>
+	</div>
+	</center>
+    </body>
+</html>   
